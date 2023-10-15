@@ -1,10 +1,10 @@
 package Person;
 
-public class main {
+public class Main {
     public String name;
     public String surname;
 
-    public main(String name, String surname) {
+    public Main(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
@@ -27,5 +27,10 @@ public class main {
 
     public String fullname(){
         return name + " " + surname;
+    }
+
+    public static void main(String[] args) {
+        Main test = new Main("Ángel", "Hernández");
+        System.out.println("Nombre y apellidos: " + test.fullname());
     }
 }
